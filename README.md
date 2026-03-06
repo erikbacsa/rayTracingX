@@ -2,11 +2,16 @@
 
 A high-performance 3D ray tracing engine written in C from scratch. Renders scenes of spheres with physically-based lighting, shadow casting, and anti-aliasing, outputting images in PPM format.
 
-![render example](assets/example.png)
+## Example Renders
+
+<img width="1280" height="480" alt="main" src="https://github.com/user-attachments/assets/49276f21-e806-433e-be89-653399c61c7e" />
+
+
 
 ---
 
 ## Features
+
 
 - **Ray-sphere intersection** via quadratic discriminant — correctly rejects behind-camera hits and selects the closest intersecting sphere per ray
 - **Physically-based lighting** with distance attenuation: `I = brightness * dot(lightDir, normal) / dist²`, clamped to [0, 1]
