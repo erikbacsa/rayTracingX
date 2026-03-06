@@ -24,31 +24,31 @@ A high-performance 3D ray tracing engine written in C from scratch. Renders scen
 
 ---
 
-## Build
+## Build & Run
 
+**1. Compile:**
 ```bash
 make
 ```
+Produces three executables: `MS1_assg`, `MS2_assg`, `FS_assg`
 
-This produces three executables:
-
-| Executable | Output |
-|------------|--------|
-| `MS1_assg` | Text output — tests vector math against scene data |
-| `MS2_assg` | Grayscale PPM render |
-| `FS_assg`  | Full color PPM render with anti-aliasing |
-
----
-
-## Usage
-
+**2. Render a scene:**
 ```bash
 ./FS_assg <input_file> <output_file.ppm>
 ```
 
-**Example:**
+**Example using the included test scene:**
 ```bash
-./FS_assg scenes/scene1.txt output.ppm
+./FS_assg FS_Testcases/12_input.txt output.ppm
+```
+
+**3. View the output:**
+
+Open `output.ppm` in any PPM viewer. If you're using VS Code, install the [PPM/PGM/PBM Image Preview](https://marketplace.visualstudio.com/items?itemName=ngtystr.ppm-pgm-viewer-for-vscode) extension.
+
+**4. Clean build files:**
+```bash
+make clean
 ```
 
 ---
